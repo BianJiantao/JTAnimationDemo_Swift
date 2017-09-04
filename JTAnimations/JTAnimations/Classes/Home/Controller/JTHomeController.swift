@@ -12,6 +12,8 @@ import UIKit
 class JTHomeController: JTBaseViewController {
 
     fileprivate var items:[JTHomeItem] = []
+    
+    /// 是否加载 items 数据
     var isLoadData:Bool = false
     var tableView:UITableView?
     
@@ -96,8 +98,17 @@ class JTHomeController: JTBaseViewController {
         
     }
     
+    /// 动画插入数据
     @objc func setupAni(){
         
+        isLoadData = true
+        var indexPaths:[IndexPath] = []
+        for i in 0..<items.count {
+            let indexPath = IndexPath(row: i, section: 0)
+            indexPaths.append(indexPath)
+        }
+        
+        tableView?.insertRows(at: indexPaths , with: .fade)
         
         
     }
@@ -110,7 +121,7 @@ extension JTHomeController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return items.count
+        return  isLoadData ? items.count : 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
