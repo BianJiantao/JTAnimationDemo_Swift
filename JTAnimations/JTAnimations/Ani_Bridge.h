@@ -10,5 +10,6 @@
 #import "FBShimmering.h"
 #import "FBShimmeringLayer.h"
 #import "FBShimmeringView.h"
-
 #import "POP.h"
+
+#import "JTAdditions.h"

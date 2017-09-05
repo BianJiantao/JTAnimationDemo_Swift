@@ -16,7 +16,7 @@ class JTHomeController: JTBaseViewController {
     /// 是否加载 items 数据
     var isLoadData:Bool = false
     var tableView:UITableView?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -65,8 +65,10 @@ class JTHomeController: JTBaseViewController {
         
         let array = [
             JTHomeItem(title: "粒子动画-雪花", vcClass: JTSnowViewController.classForCoder()),
-            JTHomeItem(title: "Facebook辉光动画", vcClass: JTShimmerViewController.classForCoder())
-        ]
+            JTHomeItem(title: "Facebook辉光动画", vcClass: JTShimmerViewController.classForCoder()),
+            JTHomeItem(title: "Pop数值动画", vcClass: JTPopNumberViewController.classForCoder())
+            
+            ]
         
         let count = array.count
         var item:JTHomeItem

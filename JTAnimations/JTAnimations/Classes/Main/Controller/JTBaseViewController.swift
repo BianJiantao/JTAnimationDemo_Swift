@@ -31,7 +31,7 @@ class JTBaseViewController: UIViewController {
 extension JTBaseViewController{
  
     
-    func setupViews(){
+    fileprivate func setupViews(){
         
         let navViewTemp = JTNavView(withTarget: self, Action:#selector(back))
         navViewTemp.backgroundColor = UIColor.clear

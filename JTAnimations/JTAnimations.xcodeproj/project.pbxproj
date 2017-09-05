@@ -40,6 +40,9 @@
 		6CE8A8BA1F5CE837005B53F3 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8A41F5CE837005B53F3 /* TransformationMatrix.cpp */; };
 		6CE8A8BF1F5E3AD9005B53F3 /* JTSnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8BE1F5E3AD9005B53F3 /* JTSnowViewController.swift */; };
 		6CE8A8C21F5E3BF1005B53F3 /* JTShimmerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8C11F5E3BF1005B53F3 /* JTShimmerViewController.swift */; };
+		6CE8A8C51F5E4966005B53F3 /* JTPopNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8C41F5E4966005B53F3 /* JTPopNumberViewController.swift */; };
+		6CE8A8C91F5E4BDE005B53F3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8C81F5E4BDE005B53F3 /* UIView+Frame.m */; };
+		6CE8A8CC1F5E8E5B005B53F3 /* HYQiHei-25JF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CE8A8CB1F5E8E5B005B53F3 /* HYQiHei-25JF.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,11 @@
 		6CE8A8BC1F5CEA8D005B53F3 /* Ani_Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ani_Bridge.h; sourceTree = "<group>"; };
 		6CE8A8BE1F5E3AD9005B53F3 /* JTSnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTSnowViewController.swift; sourceTree = "<group>"; };
 		6CE8A8C11F5E3BF1005B53F3 /* JTShimmerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTShimmerViewController.swift; sourceTree = "<group>"; };
+		6CE8A8C41F5E4966005B53F3 /* JTPopNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTPopNumberViewController.swift; sourceTree = "<group>"; };
+		6CE8A8C71F5E4BDE005B53F3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		6CE8A8C81F5E4BDE005B53F3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6CE8A8CA1F5E4C13005B53F3 /* JTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAdditions.h; sourceTree = "<group>"; };
+		6CE8A8CB1F5E8E5B005B53F3 /* HYQiHei-25JF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-25JF.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +196,7 @@
 			children = (
 				6CE8A8501F5BEB79005B53F3 /* Classes */,
 				6CE8A8291F5BE757005B53F3 /* Assets.xcassets */,
+				6CE8A8CB1F5E8E5B005B53F3 /* HYQiHei-25JF.otf */,
 				6CE8A82E1F5BE758005B53F3 /* Info.plist */,
 				6CE8A8BC1F5CEA8D005B53F3 /* Ani_Bridge.h */,
 			);
@@ -225,6 +234,7 @@
 		6CE8A8511F5BEB79005B53F3 /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6CE8A8C31F5E4950005B53F3 /* PopNumber */,
 				6CE8A8C01F5E3BC1005B53F3 /* Shimmer */,
 				6CE8A8BD1F5E3AD9005B53F3 /* Snow */,
 			);
@@ -243,6 +253,7 @@
 		6CE8A8531F5BEB79005B53F3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6CE8A8C61F5E4BDE005B53F3 /* Category */,
 				6CE8A86B1F5CE837005B53F3 /* Lib */,
 				6CE8A8631F5C2658005B53F3 /* Tool */,
 				6CE8A85E1F5BF8BE005B53F3 /* View */,
@@ -397,6 +408,24 @@
 			path = Shimmer;
 			sourceTree = "<group>";
 		};
+		6CE8A8C31F5E4950005B53F3 /* PopNumber */ = {
+			isa = PBXGroup;
+			children = (
+				6CE8A8C41F5E4966005B53F3 /* JTPopNumberViewController.swift */,
+			);
+			path = PopNumber;
+			sourceTree = "<group>";
+		};
+		6CE8A8C61F5E4BDE005B53F3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6CE8A8C71F5E4BDE005B53F3 /* UIView+Frame.h */,
+				6CE8A8C81F5E4BDE005B53F3 /* UIView+Frame.m */,
+				6CE8A8CA1F5E4C13005B53F3 /* JTAdditions.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE8A8CC1F5E8E5B005B53F3 /* HYQiHei-25JF.otf in Resources */,
 				6CE8A82A1F5BE757005B53F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE8A8C51F5E4966005B53F3 /* JTPopNumberViewController.swift in Sources */,
 				6CE8A8B61F5CE837005B53F3 /* POPMath.mm in Sources */,
 				6CE8A8651F5C2663005B53F3 /* JTAppServiceTool.swift in Sources */,
 				6CE8A8AD1F5CE837005B53F3 /* POPAnimationRuntime.mm in Sources */,
@@ -552,6 +583,7 @@
 				6CE8A8C21F5E3BF1005B53F3 /* JTShimmerViewController.swift in Sources */,
 				6CE8A8B81F5CE837005B53F3 /* POPSpringAnimation.mm in Sources */,
 				6CE8A8B41F5CE837005B53F3 /* POPGeometry.mm in Sources */,
+				6CE8A8C91F5E4BDE005B53F3 /* UIView+Frame.m in Sources */,
 				6CE8A8BF1F5E3AD9005B53F3 /* JTSnowViewController.swift in Sources */,
 				6CE8A8B11F5CE837005B53F3 /* POPCGUtils.mm in Sources */,
 				6CE8A8551F5BEB79005B53F3 /* AppDelegate.swift in Sources */,

@@ -4,6 +4,8 @@
 //
 //  Created by BJT on 2017/9/3.
 //  Copyright © 2017年 BJT. All rights reserved.
+//  参考自: https://github.com/YouXianMing
+//
 // 粒子雪花动画
 
 
