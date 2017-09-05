@@ -53,18 +53,6 @@ class JTNavView: UIView {
 // MARK: - 提供给外界的方法
 extension JTNavView{
     
-    /*
-     -(void)setTitle:(NSString *)title WithColor:(UIColor *)titleColor
-     {
-     self.titleLabel.text = title;
-     if (titleColor) {
-     self.titleLabel.textColor = titleColor;
-     }
-     [self.titleLabel sizeToFit];
-     }
-
-     */
-    
     func setNavBar(withTitle title:String?,andColor titleColor:UIColor?=nil){
     
         titleLabel?.text = title

@@ -16,11 +16,10 @@ class JTBaseViewController: UIViewController {
     /// 内容视图
     var contentView:UIView?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.white // 默认背景色
         
         // 设置子控件
         setupViews()
@@ -33,7 +32,7 @@ extension JTBaseViewController{
  
     
     func setupViews(){
-
+        
         let navViewTemp = JTNavView(withTarget: self, Action:#selector(back))
         navViewTemp.backgroundColor = UIColor.clear
         view.addSubview(navViewTemp)
@@ -48,6 +47,7 @@ extension JTBaseViewController{
         contentViewTemp.backgroundColor = UIColor.clear
         view.addSubview(contentViewTemp)
         contentView = contentViewTemp
+        
         
     }
     

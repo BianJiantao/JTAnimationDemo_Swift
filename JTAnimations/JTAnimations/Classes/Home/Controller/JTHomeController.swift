@@ -16,11 +16,13 @@ class JTHomeController: JTBaseViewController {
     /// 是否加载 items 数据
     var isLoadData:Bool = false
     var tableView:UITableView?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+
+/// TIPS: 为防止 push 时控制器的 view 有颜色重叠, 不要设置颜色透明度
+        view.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+
         navView?.alpha = 0
         
         configData()
