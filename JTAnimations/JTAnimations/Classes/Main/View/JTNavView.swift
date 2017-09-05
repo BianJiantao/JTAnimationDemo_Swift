@@ -65,5 +65,12 @@ extension JTNavView{
     }
     
     
+    func insertSubviewBelowBackBtn(view:UIView){
+        
+        insertSubview(view, belowSubview: backBtn!)
+        
+    }
+    
+    
 }
 

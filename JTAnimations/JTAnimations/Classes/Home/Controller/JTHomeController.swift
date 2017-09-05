@@ -65,7 +65,7 @@ class JTHomeController: JTBaseViewController {
         
         let array = [
             JTHomeItem(title: "粒子动画-雪花", vcClass: JTSnowViewController.classForCoder()),
-//            JTHomeItem(title: "粒子动画-雪花qq", vcClass: JTSnowViewController.classForCoder())
+            JTHomeItem(title: "Facebook辉光动画", vcClass: JTShimmerViewController.classForCoder())
         ]
         
         let count = array.count
