@@ -22,7 +22,7 @@ class JTNavigationController: UINavigationController {
         
         setupAni()
     }
-    
+
 }
 
 // MARK: - 拿到启动图片, 设置启动动画

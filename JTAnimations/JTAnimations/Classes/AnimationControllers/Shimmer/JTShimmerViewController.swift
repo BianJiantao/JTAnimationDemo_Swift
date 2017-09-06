@@ -21,7 +21,10 @@ class JTShimmerViewController: JTBaseViewController {
         setupContent()
     }
     
-    
+    deinit {
+        print("deinit-JTShimmerViewController")
+        
+    }
     private func setupTitle(){
     
         let shimmeringView = FBShimmeringView(frame: (navView?.bounds)!)

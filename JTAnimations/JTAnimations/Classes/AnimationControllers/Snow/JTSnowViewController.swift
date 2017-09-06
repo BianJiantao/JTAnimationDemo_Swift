@@ -23,7 +23,10 @@ class JTSnowViewController: JTBaseViewController {
     
         setupEmitter()
     }
-    
+    deinit {
+        print("deinit-JTSnowViewController")
+        
+    }
     private func setupEmitter(){
         
         let snowEmitter = CAEmitterLayer()

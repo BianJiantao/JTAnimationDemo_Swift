@@ -27,8 +27,18 @@ class JTPopNumberViewController: JTBaseViewController {
         view.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         navView?.setNavBar(withTitle: title)
         
+        // 初始化操作
         setup()
         
+    }
+    deinit {
+        
+        print("deinit-JTPopNumberViewController")
+    }
+    
+    override func back() {
+        timer.invalidate() // 解决定时器的循环引用问题
+        super.back()
     }
     
     fileprivate func setup(){
@@ -66,7 +76,7 @@ class JTPopNumberViewController: JTBaseViewController {
     private func startAnimation(){
         
          // 将计算出来的值通过writeBlock动态给控件设定
-        numberAnimation.property = POPMutableAnimatableProperty.property(withName: "numberAnimation", initializer: { [weak self](prop:POPMutableAnimatableProperty?) in
+        numberAnimation.property = POPMutableAnimatableProperty.property(withName: "numberAnimation", initializer: {[weak self] (prop:POPMutableAnimatableProperty?) in
             
             prop?.writeBlock = { (obj,values) in
                 

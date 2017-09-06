@@ -43,6 +43,8 @@
 		6CE8A8C51F5E4966005B53F3 /* JTPopNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8C41F5E4966005B53F3 /* JTPopNumberViewController.swift */; };
 		6CE8A8C91F5E4BDE005B53F3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8C81F5E4BDE005B53F3 /* UIView+Frame.m */; };
 		6CE8A8CC1F5E8E5B005B53F3 /* HYQiHei-25JF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CE8A8CB1F5E8E5B005B53F3 /* HYQiHei-25JF.otf */; };
+		6CE8A8CF1F5EC10B005B53F3 /* JTPwdStrengthIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8CE1F5EC10B005B53F3 /* JTPwdStrengthIndicatorViewController.swift */; };
+		6CE8A8D11F5EC134005B53F3 /* JTPwdStrengthIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE8A8D01F5EC134005B53F3 /* JTPwdStrengthIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,8 @@
 		6CE8A8C81F5E4BDE005B53F3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		6CE8A8CA1F5E4C13005B53F3 /* JTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAdditions.h; sourceTree = "<group>"; };
 		6CE8A8CB1F5E8E5B005B53F3 /* HYQiHei-25JF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-25JF.otf"; sourceTree = "<group>"; };
+		6CE8A8CE1F5EC10B005B53F3 /* JTPwdStrengthIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTPwdStrengthIndicatorViewController.swift; sourceTree = "<group>"; };
+		6CE8A8D01F5EC134005B53F3 /* JTPwdStrengthIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTPwdStrengthIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 		6CE8A8511F5BEB79005B53F3 /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6CE8A8CD1F5EC0DE005B53F3 /* PwdStrengthIndicator */,
 				6CE8A8C31F5E4950005B53F3 /* PopNumber */,
 				6CE8A8C01F5E3BC1005B53F3 /* Shimmer */,
 				6CE8A8BD1F5E3AD9005B53F3 /* Snow */,
@@ -426,6 +431,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		6CE8A8CD1F5EC0DE005B53F3 /* PwdStrengthIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6CE8A8CE1F5EC10B005B53F3 /* JTPwdStrengthIndicatorViewController.swift */,
+				6CE8A8D01F5EC134005B53F3 /* JTPwdStrengthIndicatorView.swift */,
+			);
+			path = PwdStrengthIndicator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -563,9 +577,11 @@
 				6CE8A8B61F5CE837005B53F3 /* POPMath.mm in Sources */,
 				6CE8A8651F5C2663005B53F3 /* JTAppServiceTool.swift in Sources */,
 				6CE8A8AD1F5CE837005B53F3 /* POPAnimationRuntime.mm in Sources */,
+				6CE8A8D11F5EC134005B53F3 /* JTPwdStrengthIndicatorView.swift in Sources */,
 				6CE8A8A81F5CE837005B53F3 /* FBShimmeringView.m in Sources */,
 				6CE8A8AA1F5CE837005B53F3 /* POPAnimation.mm in Sources */,
 				6CE8A8B51F5CE837005B53F3 /* POPLayerExtras.mm in Sources */,
+				6CE8A8CF1F5EC10B005B53F3 /* JTPwdStrengthIndicatorViewController.swift in Sources */,
 				6CE8A8AF1F5CE837005B53F3 /* POPAnimator.mm in Sources */,
 				6CE8A8B21F5CE837005B53F3 /* POPCustomAnimation.mm in Sources */,
 				6CE8A8A91F5CE837005B53F3 /* POPAnimatableProperty.mm in Sources */,
@@ -723,7 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JTAnimations/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BJT.JTAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -738,7 +754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JTAnimations/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BJT.JTAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
